@@ -9,8 +9,6 @@ Welcome to the official repository for my personal portfolio website. This site 
 ### Screenshot
 
 ![A screenshot of the portfolio website's hero section, showing a profile picture and the title 'Nilay Gupta'.](Assets/screenshot.png) 
-*Note: You will need to add a screenshot named `screenshot.png` to your `Assets` folder for the image to appear here.*
-
 ---
 
 ## About This Project
