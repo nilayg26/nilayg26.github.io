@@ -18,15 +18,41 @@
                 <div class="flex-shrink-0">
                     <a href="#" class="text-2xl font-bold text-white tracking-wider">N<span class="text-cyan-400">G</span></a>
                 </div>
+                <!-- Desktop Navigation -->
                 <nav class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="#about" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
                         <a href="#projects" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
                         <a href="#skills" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
                         <a href="#experience" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Experience</a>
-                        <a href="#contact" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Contact & Resume</a>
+                        <a href="#contact" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                     </div>
                 </nav>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Hamburger Icon -->
+                        <svg id="hamburger-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Close Icon -->
+                        <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu, show/hide based on menu state. -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#skills" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                <a href="#experience" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium">Experience</a>
+                <a href="#contact" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
         </div>
     </header>
@@ -57,7 +83,7 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-20">
+        <section id="about" class="py-20 fade-in-section">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">About Me</h2>
                 <div class="flex flex-col md:flex-row items-center gap-12">
@@ -84,87 +110,37 @@ I thrive on solving complex problems and am always eager to learn and apply new 
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="py-20 bg-black bg-opacity-20">
+        <section id="projects" class="py-20 bg-black bg-opacity-20 fade-in-section">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Fully Live Projects</h2>
+                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     
                     <div class="project-card rounded-lg p-6">
                         <img src="https://nilayg26.github.io/Animation/gitcommailogocompressed_11zon.jpg" alt="GitCommAI Project" class="rounded-md mb-4">
                         <h3 class="text-2xl font-bold text-white mb-2">GitCommAI - TechNews, Chat, AI & GitHub</h3>
-                        <p class="text-gray-400 mb-4">An all-in-one app featuring GitHub OAuth, an AI chatbot using Google's AI Studio & ML Kit, E2E encrypted chat with Firestore, smooth UI (Dark & Light Modes) and a Ktor-powered tech news feed.</p>
-                        <div style="margin-bottom: 16px;">
-                            <p style="color: #67e8f9; font-weight: 600; margin-bottom: 8px; font-size: 14px;">Tech Stack:</p>
-                            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Kotlin, Jetpack Compose</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Firebase</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">GitHub OAuth</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Google AI Studio</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Google's ML Kit</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">RSA Encryption E2E</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Ktor</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Firestore</span>
-                            </div>
-                        </div>
-                        <a href="https://github.com/nilayg26/GitCommAI" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
+                        <p class="text-gray-400 mb-4">An all-in-one app featuring GitHub OAuth, an AI chatbot using Google's AI Studio & ML Kit, E2E encrypted chat with Firestore, and a Ktor-powered tech news feed.</p>
+                        <a href="https://github.com/nilayg26/GitCommAI" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">View on GitHub</a>
                     </div>
 
                     <div class="project-card rounded-lg p-6">
                         <img src="https://nilayg26.github.io/Animation/MoodMateAssets/app_logo.png" alt="MoodMate Project" class="rounded-md mb-4">
                         <h3 class="text-2xl font-bold text-white mb-2">MoodMate: AI-Powered Mental Health App</h3>
                         <p class="text-gray-400 mb-4">A mental health companion with Google OAuth, Gemini AI for daily insights, mood tracking with chart visualization, assessments, and local data persistence using Room/SQLite.</p>
-                        <div style="margin-bottom: 16px;">
-                            <p style="color: #67e8f9; font-weight: 600; margin-bottom: 8px; font-size: 14px;">Tech Stack:</p>
-                            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Kotlin, Jetpack Compose</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Google OAuth, Firebase</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Google AI Studio</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Room SQLite & SharedPreferences</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Lottie Animations</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">YCharts Library</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Android SDK</span>
-                            </div>
-                        </div>
-                        <a href="https://github.com/nilayg26/MoodMate" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
+                        <a href="https://github.com/nilayg26/MoodMate" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">View on GitHub</a>
                     </div>
                     
                     <div class="project-card rounded-lg p-6">
                         <img src="https://nilayg26.github.io/Animation/musicapplogo.jpg" alt="SangeetNow Project" class="rounded-md mb-4">
                         <h3 class="text-2xl font-bold text-white mb-2">SangeetNow: AI-Powered Music Discovery</h3>
                         <p class="text-gray-400 mb-4">A music app using the Deezer API via Retrofit to fetch millions of songs. Features AI-driven song selection via Gemini AI and efficient resource management for playback and downloads.</p>
-                        <div style="margin-bottom: 16px;">
-                            <p style="color: #67e8f9; font-weight: 600; margin-bottom: 8px; font-size: 14px;">Tech Stack:</p>
-                            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Kotlin, Jetpack Compose</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Firebase</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Deezer API</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Retrofit & Ktor </span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">MediaPlayer Class</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Google AI Studio</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">ViewModel</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">DownloadManager, BroadcastReciever</span>
-                            </div>
-                        </div>
-                        <a href="https://github.com/nilayg26/SangeetNow" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
+                        <a href="https://github.com/nilayg26/SangeetNow" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">View on GitHub</a>
                     </div>
 
                     <div class="project-card rounded-lg p-6">
                         <img src="https://meta-capstone-little-lemon.web.app/static/media/secondaryLogo.2c859235d6c57bb54176.png" alt="Little Lemon Project" class="rounded-md mb-4">
                         <h3 class="text-2xl font-bold text-white mb-2">Little Lemon: Restaurant App (Meta Capstone)</h3>
-                        <p class="text-gray-400 mb-4">A capstone project for the Meta Android Developer Certificate. Features Firebase Email/Google authentication and a menu system that fetches data via Ktor and persists it locally with Room.</p>
-                        <div style="margin-bottom: 16px;">
-                            <p style="color: #67e8f9; font-weight: 600; margin-bottom: 8px; font-size: 14px;">Tech Stack:</p>
-                            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Kotlin, Jetpack Compose</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Firebase</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Email Verification</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Ktor</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Room Database</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">SQLite</span>
-                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Material Design</span>
-                            </div>
-                        </div>
-                        <a href="https://github.com/nilayg26/LittleLemon" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
+                        <p class="text-gray-400 mb-4">A capstone project for the Meta Android Developer Certificate. Features Firebase email/Google authentication and a menu system that fetches data via Ktor and persists it locally with Room.</p>
+                        <a href="https://github.com/nilayg26/LittleLemon" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">View on GitHub</a>
                     </div>
 
                 </div>
@@ -174,7 +150,7 @@ I thrive on solving complex problems and am always eager to learn and apply new 
         <!-- Skills Section -->
         <section id="skills" class="py-20 fade-in-section">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Skills Terminal</h2>
+                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">System Mainframe: Skills</h2>
                 <div id="hacker-terminal-container" class="bg-black p-6 rounded-lg border border-cyan-500/30 shadow-lg cyber-glow">
                      <pre><code id="hacker-terminal"></code></pre>
                 </div>
@@ -256,10 +232,6 @@ I thrive on solving complex problems and am always eager to learn and apply new 
                     <a href="mailto:nilay.gupta9896knp@gmail.com" class="inline-flex items-center gap-3 bg-purple-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-purple-700 transition cyber-glow-purple text-lg">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
                         Email
-                    </a>
-                    <a href="Assets/NilayDevResume1.pdf" target="_blank" class="inline-flex items-center gap-3 bg-cyan-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-cyan-700 transition cyber-glow text-lg">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C13.1 2 14 2.9 14 4V16.17L19.83 10.34C20.22 9.95 20.85 9.95 21.24 10.34C21.63 10.73 21.63 11.36 21.24 11.75L12.7 20.29C12.31 20.68 11.68 20.68 11.29 20.29L2.76 11.75C2.37 11.36 2.37 10.73 2.76 10.34C3.15 9.95 3.78 9.95 4.17 10.34L10 16.17V4C10 2.9 10.9 2 12 2Z"/></svg>
-                        Download Resume
                     </a>
                 </div>
 
