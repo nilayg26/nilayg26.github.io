@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilay Gupta - Portfolio</title>
+   <link rel="icon" href="Assets/android-chrome-192x192.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed w-full z-30 top-0 bg-opacity-50 backdrop-blur-sm border-b border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-white tracking-wider">N<span class="text-cyan-400">G</span></a>
+                </div>
+                <nav class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#projects" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#skills" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#experience" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                        <a href="#contact" class="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium">Contact & Resume</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center bg-grid-cyan-500/10 relative">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a1a]"></div>
+            <div class="text-center p-8 z-10">
+                <div class="w-48 h-48 mx-auto mb-6 rounded-full cyber-glow overflow-hidden border-2 border-cyan-400">
+                     <img src="Assets/NilayProfile.jpg" alt="Nilay Gupta placeholder image" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tighter">Nilay Gupta</h1>
+                <p class="text-xl md:text-2xl text-cyan-400 mb-6">Pre-Final year CSE | Android | KMP | AI Powered | Tech Savvy</p>
+                 <div class="text-gray-400 text-lg space-y-2">
+                    <p class="italic">"Float like a Cadillac, sting like a Beemer."</p>
+                    <p class="font-mono text-cyan-300">"Don't be greedy, think Dynamically (;"</p>
+                </div>
+                <div class="flex justify-center space-x-6 mt-8">
+                    <a href="https://www.linkedin.com/in/nilayg26/" target="_blank" class="text-gray-300 hover:text-cyan-400 transition">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                    </a>
+                    <a href="https://github.com/nilayg26" target="_blank" class="text-gray-300 hover:text-cyan-400 transition">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="Assets/Review.jpeg" alt="Abstract tech graphic" class="rounded-lg shadow-lg cyber-glow-purple">
+                    </div>
+                    <div class="md:w-1/2 text-lg text-gray-300 leading-relaxed">
+                        <p>
+                           Motivated AI-powered Computer Science student from Vellore Institute of Technology (CGPA: 9.20/10.0) seeking challenging Software Engineering Internships.
+                        </p>
+                        <br>
+                        <p>
+                            I thrive in collaborative agile environments where continuous
+learning and technical excellence are valued. Whether implementing
+RSA encryption for secure messaging, caching remote Lottie
+animations in ROM, or integrating AI-driven logic for real-time
+analysis and smart media selection, I apply creative problem-solving
+and best practices to deliver impactful results.
+I thrive on solving complex problems and am always eager to learn and apply new skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-black bg-opacity-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Fully Live Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                    
+                    <div class="project-card rounded-lg p-6">
+                        <img src="https://nilayg26.github.io/Animation/gitcommailogocompressed_11zon.jpg" alt="GitCommAI Project" class="rounded-md mb-4">
+                        <h3 class="text-2xl font-bold text-white mb-2">GitCommAI - TechNews, Chat, AI & GitHub</h3>
+                        <p class="text-gray-400 mb-4">An all-in-one app featuring GitHub OAuth, an AI chatbot using Google's AI Studio & ML Kit, E2E encrypted chat with Firestore, smooth UI (Dark & Light Modes) and a Ktor-powered tech news feed.</p>
+                        <div style="margin-bottom: 16px;">
+                            <p style="color: #67e8f9; font-weight: 600; margin-bottom: 8px; font-size: 14px;">Tech Stack:</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Kotlin, Jetpack Compose</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Firebase</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">GitHub OAuth</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Google AI Studio</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Google's ML Kit</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">RSA Encryption E2E</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Ktor</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Firestore</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/nilayg26/GitCommAI" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
+                    </div>
+
+                    <div class="project-card rounded-lg p-6">
+                        <img src="https://nilayg26.github.io/Animation/MoodMateAssets/app_logo.png" alt="MoodMate Project" class="rounded-md mb-4">
+                        <h3 class="text-2xl font-bold text-white mb-2">MoodMate: AI-Powered Mental Health App</h3>
+                        <p class="text-gray-400 mb-4">A mental health companion with Google OAuth, Gemini AI for daily insights, mood tracking with chart visualization, assessments, and local data persistence using Room/SQLite.</p>
+                        <div style="margin-bottom: 16px;">
+                            <p style="color: #67e8f9; font-weight: 600; margin-bottom: 8px; font-size: 14px;">Tech Stack:</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Kotlin, Jetpack Compose</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Google OAuth, Firebase</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Google AI Studio</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Room SQLite & SharedPreferences</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Lottie Animations</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">YCharts Library</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Android SDK</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/nilayg26/MoodMate" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
+                    </div>
+                    
+                    <div class="project-card rounded-lg p-6">
+                        <img src="https://nilayg26.github.io/Animation/musicapplogo.jpg" alt="SangeetNow Project" class="rounded-md mb-4">
+                        <h3 class="text-2xl font-bold text-white mb-2">SangeetNow: AI-Powered Music Discovery</h3>
+                        <p class="text-gray-400 mb-4">A music app using the Deezer API via Retrofit to fetch millions of songs. Features AI-driven song selection via Gemini AI and efficient resource management for playback and downloads.</p>
+                        <div style="margin-bottom: 16px;">
+                            <p style="color: #67e8f9; font-weight: 600; margin-bottom: 8px; font-size: 14px;">Tech Stack:</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Kotlin, Jetpack Compose</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Firebase</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Deezer API</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Retrofit & Ktor </span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">MediaPlayer Class</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Google AI Studio</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">ViewModel</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">DownloadManager, BroadcastReciever</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/nilayg26/SangeetNow" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
+                    </div>
+
+                    <div class="project-card rounded-lg p-6">
+                        <img src="https://meta-capstone-little-lemon.web.app/static/media/secondaryLogo.2c859235d6c57bb54176.png" alt="Little Lemon Project" class="rounded-md mb-4">
+                        <h3 class="text-2xl font-bold text-white mb-2">Little Lemon: Restaurant App (Meta Capstone)</h3>
+                        <p class="text-gray-400 mb-4">A capstone project for the Meta Android Developer Certificate. Features Firebase Email/Google authentication and a menu system that fetches data via Ktor and persists it locally with Room.</p>
+                        <div style="margin-bottom: 16px;">
+                            <p style="color: #67e8f9; font-weight: 600; margin-bottom: 8px; font-size: 14px;">Tech Stack:</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Kotlin, Jetpack Compose</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Firebase</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Email Verification</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Ktor</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Room Database</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">SQLite</span>
+                                <span style="background-color: rgba(0, 255, 255, 0.1); color: #00ffff; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 500;">Material Design</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/nilayg26/LittleLemon" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 fade-in-section">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Skills Terminal</h2>
+                <div id="hacker-terminal-container" class="bg-black p-6 rounded-lg border border-cyan-500/30 shadow-lg cyber-glow">
+                     <pre><code id="hacker-terminal"></code></pre>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- Experience & Education Section -->
+        <section id="experience" class="py-20 bg-black bg-opacity-20 fade-in-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div>
+                        <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Experience</h2>
+                        <div class="relative border-l-2 border-cyan-500/30 pl-8">
+                            <div class="mb-8 relative">
+                                <div class="absolute -left-10 w-4 h-4 bg-cyan-400 rounded-full mt-1.5 border-2 border-[#0a0a1a] cyber-glow"></div>
+                                <h3 class="text-xl font-bold text-white">Freelance App Developer</h3>
+                                <p class="text-md text-cyan-300 mb-1">Freelancer.com</p>
+                                <p class="text-gray-400">Developed and delivered a full-stack Android application (Project MoodMate) for a client, receiving positive feedback for project delivery and quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Education</h2>
+                        <div class="relative border-l-2 border-cyan-500/30 pl-8">
+                            <div class="mb-8 relative">
+                                 <div class="absolute -left-10 w-4 h-4 bg-cyan-400 rounded-full mt-1.5 border-2 border-[#0a0a1a] cyber-glow"></div>
+                                <h3 class="text-xl font-bold text-white">Vellore Institute of Technology (VIT)</h3>
+                                <p class="text-md text-cyan-300 mb-1">B.Tech in Computer Science and Engineering</p>
+                                <p class="text-gray-400">Aug 2023 - April 2027 | CGPA: 9.20/10.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 fade-in-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Certifications & Accomplishments</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                   
+                   <div class="project-card p-6 rounded-lg flex flex-col items-center justify-center gap-4">
+                     <img src="https://nilayg26.github.io/Animation/Certificates/MetaAndroidDev.jpg" alt="Abstract tech graphic" class="rounded-lg shadow-lg cyber-glow-purple">
+                       <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg" alt="Meta Certified placeholder" class="w-12 h-12 rounded-full object-cover" />
+                       <h3 class="text-lg font-bold text-white">Meta Certified Professional</h3>
+                       <p class="text-cyan-400">Android Developer</p>
+                   </div>
+
+                   <div class="project-card p-6 rounded-lg flex flex-col items-center justify-center gap-4">
+                    <img src="Assets/problem_solving_intermediate certificate.jpg" alt="Abstract tech graphic" class="rounded-lg shadow-lg cyber-glow-purple">
+                       <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="HackerRank Problem Solving placeholder" class="w-12 h-12 rounded-full object-cover" />
+                       <h3 class="text-lg font-bold text-white">HackerRank</h3>
+                       <p class="text-cyan-400">Intermediate Problem Solving Certificate</p>
+                   </div>
+                    <div class="project-card p-6 rounded-lg flex flex-col items-center justify-center gap-4">
+                        <img src="https://assets.leetcode.com/users/leetcode/avatar_1568224780.png" alt="LeetCode placeholder" class="w-12 h-12 rounded-full object-cover" />
+                        <h3 class="text-lg font-bold text-white">LeetCode</h3>
+                        <p class="text-cyan-400">170+ Questions Solved</p>
+                    </div>
+
+                    <div class="project-card p-6 rounded-lg flex flex-col items-center justify-center gap-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="HackerRank 5 Star Gold placeholder" class="w-12 h-12 rounded-full object-cover" />
+                        <h3 class="text-lg font-bold text-white">HackerRank</h3>
+                        <p class="text-cyan-400">5 Star ⭐️ Gold (DSA & Java)</p>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact" class="py-12 bg-black bg-opacity-30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-4">Get In Touch</h2>
+                <p class="text-gray-400 mb-8">Feel free to reach out for collaborations, Internships oppurtunities or just a friendly chat!</p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="mailto:nilay.gupta9896knp@gmail.com" class="inline-flex items-center gap-3 bg-purple-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-purple-700 transition cyber-glow-purple text-lg">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                        Email
+                    </a>
+                    <a href="Assets/NilayDevResume1.pdf" target="_blank" class="inline-flex items-center gap-3 bg-cyan-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-cyan-700 transition cyber-glow text-lg">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C13.1 2 14 2.9 14 4V16.17L19.83 10.34C20.22 9.95 20.85 9.95 21.24 10.34C21.63 10.73 21.63 11.36 21.24 11.75L12.7 20.29C12.31 20.68 11.68 20.68 11.29 20.29L2.76 11.75C2.37 11.36 2.37 10.73 2.76 10.34C3.15 9.95 3.78 9.95 4.17 10.34L10 16.17V4C10 2.9 10.9 2 12 2Z"/></svg>
+                        Download Resume
+                    </a>
+                </div>
+
+                <div class="mt-8 flex justify-center space-x-6">
+                   <a href="https://www.linkedin.com/in/nilayg26/" target="_blank" class="text-gray-300 hover:text-cyan-400 transition">LinkedIn</a>
+                   <a href="https://github.com/nilayg26" target="_blank" class="text-gray-300 hover:text-cyan-400 transition">GitHub</a>
+                   <a href="https://leetcode.com/u/nilayg26/" target="_blank" class="text-gray-300 hover:text-cyan-400 transition">LeetCode</a>
+                   <a href="https://www.hackerrank.com/profile/nilay_gupta98961" target="_blank" class="text-gray-300 hover:text-cyan-400 transition">HackerRank</a>
+                </div>
+                 <div class="mt-8 text-sm text-gray-500">
+                    <p>&copy; Made by Nilay Gupta</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
