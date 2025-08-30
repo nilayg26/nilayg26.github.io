@@ -88,3 +88,80 @@ body {
     }
 }
 
+/* Ensure projects section is always visible */
+#projects {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive improvements for projects section */
+@media (max-width: 768px) {
+    .project-card {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .project-card img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .project-card h3 {
+        font-size: 1.25rem;
+        line-height: 1.3;
+    }
+    
+    .project-card p {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+    
+    .tech-stack-tag {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
+    
+    /* Ensure projects section is visible on mobile */
+    #projects {
+        padding: 2rem 1rem;
+        min-height: auto;
+        overflow: visible;
+    }
+    
+    #projects .max-w-7xl {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .project-card h3 {
+        font-size: 1.125rem;
+    }
+    
+    .project-card p {
+        font-size: 0.8rem;
+    }
+    
+    /* Additional mobile optimizations */
+    #projects {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    #projects .max-w-7xl {
+        padding: 0 0.5rem;
+    }
+    
+    #projects h2 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+}
+

@@ -44,15 +44,15 @@
                 </div>
             </div>
         </div>
-
+        
         <!-- Mobile Menu, show/hide based on menu state. -->
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#about" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="#projects" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-                <a href="#skills" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium">Skills</a>
-                <a href="#experience" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium">Experience</a>
-                <a href="#contact" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#about" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium mobile-menu-link">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium mobile-menu-link">Projects</a>
+                <a href="#skills" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium mobile-menu-link">Skills</a>
+                <a href="#experience" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium mobile-menu-link">Experience</a>
+                <a href="#contact" class="text-gray-300 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium mobile-menu-link">Contact</a>
             </div>
         </div>
     </header>
@@ -85,7 +85,7 @@
         <!-- About Section -->
         <section id="about" class="py-20 fade-in-section">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">About Me</h2>
+                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Personal Note</h2>
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/2">
                         <img src="Assets/Review.jpeg" alt="Abstract tech graphic" class="rounded-lg shadow-lg cyber-glow-purple">
@@ -112,35 +112,85 @@ I thrive on solving complex problems and am always eager to learn and apply new 
         <!-- Projects Section -->
         <section id="projects" class="py-20 bg-black bg-opacity-20 fade-in-section">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Fully Live Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                     
                     <div class="project-card rounded-lg p-6">
                         <img src="https://nilayg26.github.io/Animation/gitcommailogocompressed_11zon.jpg" alt="GitCommAI Project" class="rounded-md mb-4">
                         <h3 class="text-2xl font-bold text-white mb-2">GitCommAI - TechNews, Chat, AI & GitHub</h3>
-                        <p class="text-gray-400 mb-4">An all-in-one app featuring GitHub OAuth, an AI chatbot using Google's AI Studio & ML Kit, E2E encrypted chat with Firestore, and a Ktor-powered tech news feed.</p>
-                        <a href="https://github.com/nilayg26/GitCommAI" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">View on GitHub</a>
+                        <p class="text-gray-400 mb-4">An all-in-one app featuring GitHub OAuth, an AI chatbot using Google's AI Studio & ML Kit, E2E encrypted chat with Firestore, smooth UI (Dark & Light Modes) and a Ktor-powered tech news feed.</p>
+                        <div class="mb-4">
+                            <p class="text-cyan-400 font-semibold mb-2 text-sm">Tech Stack:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tech-stack-tag">Kotlin, Jetpack Compose</span>
+                                <span class="tech-stack-tag">Firebase</span>
+                                <span class="tech-stack-tag">GitHub OAuth</span>
+                                <span class="tech-stack-tag">Google AI Studio</span>
+                                <span class="tech-stack-tag">Google's ML Kit</span>
+                                <span class="tech-stack-tag">RSA Encryption E2E</span>
+                                <span class="tech-stack-tag">Ktor</span>
+                                <span class="tech-stack-tag">Firestore</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/nilayg26/GitCommAI" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
                     </div>
 
                     <div class="project-card rounded-lg p-6">
                         <img src="https://nilayg26.github.io/Animation/MoodMateAssets/app_logo.png" alt="MoodMate Project" class="rounded-md mb-4">
                         <h3 class="text-2xl font-bold text-white mb-2">MoodMate: AI-Powered Mental Health App</h3>
                         <p class="text-gray-400 mb-4">A mental health companion with Google OAuth, Gemini AI for daily insights, mood tracking with chart visualization, assessments, and local data persistence using Room/SQLite.</p>
-                        <a href="https://github.com/nilayg26/MoodMate" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">View on GitHub</a>
+                        <div class="mb-4">
+                            <p class="text-cyan-400 font-semibold mb-2 text-sm">Tech Stack:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tech-stack-tag">Kotlin, Jetpack Compose</span>
+                                <span class="tech-stack-tag">Google OAuth, Firebase</span>
+                                <span class="tech-stack-tag">Google AI Studio</span>
+                                <span class="tech-stack-tag">Room SQLite & SharedPreferences</span>
+                                <span class="tech-stack-tag">Lottie Animations</span>
+                                <span class="tech-stack-tag">YCharts Library</span>
+                                <span class="tech-stack-tag">Android SDK</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/nilayg26/MoodMate" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
                     </div>
                     
                     <div class="project-card rounded-lg p-6">
                         <img src="https://nilayg26.github.io/Animation/musicapplogo.jpg" alt="SangeetNow Project" class="rounded-md mb-4">
                         <h3 class="text-2xl font-bold text-white mb-2">SangeetNow: AI-Powered Music Discovery</h3>
                         <p class="text-gray-400 mb-4">A music app using the Deezer API via Retrofit to fetch millions of songs. Features AI-driven song selection via Gemini AI and efficient resource management for playback and downloads.</p>
-                        <a href="https://github.com/nilayg26/SangeetNow" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">View on GitHub</a>
+                        <div class="mb-4">
+                            <p class="text-cyan-400 font-semibold mb-2 text-sm">Tech Stack:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tech-stack-tag">Kotlin, Jetpack Compose</span>
+                                <span class="tech-stack-tag">Firebase</span>
+                                <span class="tech-stack-tag">Deezer API</span>
+                                <span class="tech-stack-tag">Retrofit & Ktor</span>
+                                <span class="tech-stack-tag">MediaPlayer Class</span>
+                                <span class="tech-stack-tag">Google AI Studio</span>
+                                <span class="tech-stack-tag">ViewModel</span>
+                                <span class="tech-stack-tag">DownloadManager, BroadcastReciever</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/nilayg26/SangeetNow" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
                     </div>
 
                     <div class="project-card rounded-lg p-6">
                         <img src="https://meta-capstone-little-lemon.web.app/static/media/secondaryLogo.2c859235d6c57bb54176.png" alt="Little Lemon Project" class="rounded-md mb-4">
                         <h3 class="text-2xl font-bold text-white mb-2">Little Lemon: Restaurant App (Meta Capstone)</h3>
-                        <p class="text-gray-400 mb-4">A capstone project for the Meta Android Developer Certificate. Features Firebase email/Google authentication and a menu system that fetches data via Ktor and persists it locally with Room.</p>
-                        <a href="https://github.com/nilayg26/LittleLemon" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">View on GitHub</a>
+                        <p class="text-gray-400 mb-4">A capstone project for the Meta Android Developer Certificate. Features Firebase Email/Google authentication and a menu system that fetches data via Ktor and persists it locally with Room.</p>
+                        <div class="mb-4">
+                            <p class="text-cyan-400 font-semibold mb-2 text-sm">Tech Stack:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tech-stack-tag">Kotlin, Jetpack Compose</span>
+                                <span class="tech-stack-tag">Firebase</span>
+                                <span class="tech-stack-tag">Email Verification</span>
+                                <span class="tech-stack-tag">Ktor</span>
+                                <span class="tech-stack-tag">Room Database</span>
+                                <span class="tech-stack-tag">SQLite</span>
+                                <span class="tech-stack-tag">Material Design</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/nilayg26/LittleLemon" target="_blank" class="inline-block bg-cyan-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-cyan-600 transition cyber-glow">Continue on GitHub</a>
                     </div>
 
                 </div>
@@ -150,7 +200,7 @@ I thrive on solving complex problems and am always eager to learn and apply new 
         <!-- Skills Section -->
         <section id="skills" class="py-20 fade-in-section">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">System Mainframe: Skills</h2>
+                <h2 class="text-3xl font-bold text-center text-cyan-400 mb-12">Skills Terminal</h2>
                 <div id="hacker-terminal-container" class="bg-black p-6 rounded-lg border border-cyan-500/30 shadow-lg cyber-glow">
                      <pre><code id="hacker-terminal"></code></pre>
                 </div>
@@ -232,6 +282,10 @@ I thrive on solving complex problems and am always eager to learn and apply new 
                     <a href="mailto:nilay.gupta9896knp@gmail.com" class="inline-flex items-center gap-3 bg-purple-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-purple-700 transition cyber-glow-purple text-lg">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
                         Email
+                    </a>
+                    <a href="Assets/NilayDevResume1.pdf" target="_blank" class="inline-flex items-center gap-3 bg-cyan-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-cyan-700 transition cyber-glow text-lg">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                        Download Resume
                     </a>
                 </div>
 
