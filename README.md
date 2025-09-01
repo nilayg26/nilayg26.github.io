@@ -21,7 +21,7 @@ This portfolio was designed to be a dynamic and engaging introduction to my work
 -   📱 **Fully Responsive:** Adapts perfectly to desktops, tablets, and mobile phones.
 -   📟 **Interactive Skills Terminal:** An animated "hacker terminal" types out my technical skills.
 -   🎬 **Smooth Scrolling & Animations:** Subtle fade-in animations for a polished user experience.
--   📂 **Project Showcase:** A dedicated section to highlight my key projects.
+-   📂 **Project & Certifications Showcase:** A dedicated section to highlight my key projects.
 -   📄 **Direct Resume Download:** A convenient "Download Resume" button.
 
 ## 🛠️ Tech Stack
