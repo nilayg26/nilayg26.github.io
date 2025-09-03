@@ -1,6 +1,6 @@
 # 🚀 Nilay Gupta's Portfolio Website 🚀
 
-Welcome to the code behind my personal portfolio! This site is a showcase of my skills, projects, and professional journey as an AI-powered Software Engineer and Android Developer.
+Welcome to the code behind my personal portfolio! This site is a showcase of my skills, certifications, projects, and my experience & education journey as an aspiring AI-powered Software Engineer and Android Developer.
 
 **✨ Visit the live site: [nilayg26.github.io](https://nilayg26.github.io/) ✨**
 
@@ -21,7 +21,7 @@ This portfolio was designed to be a dynamic and engaging introduction to my work
 -   📱 **Fully Responsive:** Adapts perfectly to desktops, tablets, and mobile phones.
 -   📟 **Interactive Skills Terminal:** An animated "hacker terminal" types out my technical skills.
 -   🎬 **Smooth Scrolling & Animations:** Subtle fade-in animations for a polished user experience.
--   📂 **Project Showcase:** A dedicated section to highlight my key projects.
+-   📂 **Project & Certifications Showcase:** A dedicated section to highlight my key projects.
 -   📄 **Direct Resume Download:** A convenient "Download Resume" button.
 
 ## 🛠️ Tech Stack
