@@ -14,7 +14,17 @@ Welcome to the code behind my personal portfolio! This site is a showcase of my 
 
 ## 🤖 About This Project
 
-This portfolio was designed to be a dynamic and engaging introduction to my work. It's built with a modern, cyberpunk-inspired aesthetic to reflect my passion for cutting-edge technology, while maintaining a clean and professional structure.
+### 🎨 Design & Aesthetic
+I designed this website with the help of AI to be a dynamic and engaging introduction to my work.  
+It’s built with a modern, **cyberpunk-inspired aesthetic** to reflect my passion for cutting-edge technology, while maintaining a clean and professional structure.  
+
+### 🛠️ Development Process
+It involved carefully prompting AI and overlooking every piece of code to ensure the website is **bug-free** and **robust**.  
+
+### 🌐 Vision & Belief
+Being a keen observer and learner of **AI and Large LLMs**, I am confident that **AI will not replace humans**.  
+Instead, **humans will be replaced by AI-powered humans**.  
+
 
 ## 🌟 Key Features
 
@@ -22,7 +32,7 @@ This portfolio was designed to be a dynamic and engaging introduction to my work
 -   📟 **Interactive Skills Terminal:** An animated "hacker terminal" types out my technical skills.
 -   🎬 **Smooth Scrolling & Animations:** Subtle fade-in animations for a polished user experience.
 -   📂 **Project & Certifications Showcase:** A dedicated section to highlight my key projects.
--   📄 **Direct Resume Download:** A convenient "Download Resume" button.
+-   📄 **Direct Resume Link:** A convenient "Download/View Resume" button.
 
 ## 🛠️ Tech Stack
 
