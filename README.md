@@ -41,6 +41,8 @@ This project was built from the ground up using modern web technologies:
 -   **HTML5:** For the core structure and content.
 -   **Tailwind CSS:** For a utility-first, responsive design.
 -   **JavaScript (ES6+):** To power the interactive elements.
+-   **Cursor AI Code Editor along with Gemini 2.5 pro** for AI Assist.
+
 
 ---
 
