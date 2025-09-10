@@ -50,7 +50,7 @@ function initHackerTerminalAnimation() {
         { text: 'Loading Master Nilay\'s skills...', speed: 10 },
         { text: '// Injecting Skills into system...', speed: 8, delay: 150 },
         { text: '', speed: 8, delay: 20 },
-        { text: '>> ANDROID_&_Kotlin_Multiplatform_DEV_STACK', speed: 12, color: '#FFD700' },
+        { text: '>> Android_&_Kotlin_Multiplatform_DEV_STACK', speed: 12, color: '#FFD700' },
         { text: '   - Jetpack Compose (UI) & MVVM (Architecture)', speed: 5 },
         { text: '   - Room & SQL & Shared Preferences (Local Data Storage)', speed: 5 },
         { text: '   - Retrofit & Ktor (Networking)', speed: 5 },
