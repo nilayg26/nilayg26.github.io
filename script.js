@@ -57,7 +57,6 @@ function initHackerTerminalAnimation() {
         { text: '   - LiveData, Kotlin Coroutines (Concurrency)', speed: 5 },
         { text: '   - Firebase (Backend as a Service) & Google AI Studio (AI)', speed: 5 },
         { text: '   - Google ML Kit (AI/ML)', speed: 5 },
-        { text: '   - Lottie (Animations)', speed: 5 },
         { text: '', speed: 8, delay: 20 },
         { text: '>> LANGUAGES', speed: 12, color: '#FFD700' },
         { text: '   - Java', speed: 5 },
