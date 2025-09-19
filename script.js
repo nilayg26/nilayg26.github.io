@@ -53,7 +53,7 @@ function initHackerTerminalAnimation() {
         { text: '>> Android_&_Kotlin_Multiplatform_DEV_STACK', speed: 12, color: '#FFD700' },
         { text: '   - Jetpack Compose (UI) & MVVM (Architecture)', speed: 5 },
         { text: '   - Room & SQL & Shared Preferences (Local Data Storage)', speed: 5 },
-        { text: '   - Retrofit & Ktor (Networking)', speed: 5 },
+        { text: '   - Ktor (Networking)', speed: 5 },
         { text: '   - LiveData, Kotlin Coroutines (Concurrency)', speed: 5 },
         { text: '   - Firebase (Backend as a Service) & Google AI Studio (AI)', speed: 5 },
         { text: '   - Google ML Kit (AI/ML)', speed: 5 },
