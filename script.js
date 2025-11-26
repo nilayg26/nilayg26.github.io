@@ -67,8 +67,9 @@ function initHackerTerminalAnimation() {
         { text: '>> CORE_CONCEPTS_&_TOOLS', speed: 12, color: '#FFD700' },
         { text: '   - Data Structures & Algorithms', speed: 5 },
         { text: '   - Object-Oriented Programming', speed: 5 },
+        { text: '   - Core CS Subjects: Database Systems & Operating Systems', speed: 5 },
         { text: '   - Git & GitHub', speed: 5 },
-        { text: '   - Android Studio, Cursor AI Code Editor, VS Code', speed: 5 },
+        { text: '   - Android Studio, VS Code', speed: 5 },
         { text: '', speed: 8, delay: 20 },
         { text: '//Trust me bro. He is the best', speed: 8 }
     ];
